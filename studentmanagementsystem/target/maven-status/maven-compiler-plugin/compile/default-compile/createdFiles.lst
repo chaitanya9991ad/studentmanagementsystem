@@ -1,0 +1,4 @@
+com\example\studentmanagementsystem\api\Student.class
+controller\studentcontroller.class
+com\example\studentmanagementsystem\StudentmanagementsystemApplication.class
+repository\studentRepository.class

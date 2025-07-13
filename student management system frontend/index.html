@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Student Management UI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Student Management</h1>
+
+  <form id="studentForm">
+    <input type="number" name="rollno" placeholder="Roll No (for update)" />
+    <input type="text" name="name" placeholder="Name" required />
+    <input type="number" name="percentage" step="0.1" placeholder="Percentage" required />
+    <input type="text" name="branch" placeholder="Branch" required />
+    <button type="submit">Add / Update Student</button>
+  </form>
+
+  <button onclick="loadStudents()">Refresh Students</button>
+
+  <h2>All Students</h2>
+  <table id="studentTable">
+    <thead>
+      <tr>
+        <th>Roll No</th>
+        <th>Name</th>
+        <th>Percentage</th>
+        <th>Branch</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
